@@ -29,7 +29,7 @@ async def safe_edit(msg: Message, text: str):
     except Exception:
         pass
 
-@app.on_message(filters.command(["zombies", "clean"]))
+@app.on_message(filters.command(["zombies"]))
 async def prompt_zombie_cleanup(_: Client, message: Message):
     if not await is_admin(message):
         return await message.reply("👮🏻 | **Only admins can execute this command.**")
