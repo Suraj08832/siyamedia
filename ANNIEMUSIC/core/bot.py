@@ -3,7 +3,6 @@ import os
 import sys
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus
-from pyrogram.connection.transport.tcp import TCPAbridged as ConnectionTcpAbridged
 
 import config
 from ..logging import LOGGER
@@ -17,9 +16,6 @@ class JARVIS(Client):
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
             max_concurrent_transmissions=7,
-            connection=ConnectionTcpAbridged,
-            request_timeout=15,
-            connection_retries=3,
         )
         LOGGER(__name__).info("Bot client initialized.")
 
