@@ -31,8 +31,11 @@ async def show_repo(_, msg):
 
     reply_markup = InlineKeyboardMarkup(buttons)
 
-    await msg.reply_photo(
-        photo="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg",
-        caption=repo_caption,
-        reply_markup=reply_markup
-    )
+    try:  
+        await msg.reply_photo(
+            photo="https://telegra.ph/file/58afe55fee5ae99d6901b.jpg",
+            caption=repo_caption,
+            reply_markup=reply_markup
+        )
+    except:
+        pass
