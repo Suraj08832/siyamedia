@@ -2,7 +2,7 @@ from pyrogram import Client
 
 import config
 
-from ..logging  import LOGGER
+from ..logging import LOGGER
 
 assistants = []
 assistantids = []
@@ -96,7 +96,7 @@ class Userbot:
             LOGGER(__name__).error(f"Failed to start Assistant {index}: {e}")
 
     async def start(self):
-        LOGGER(__name__).info("Starting Tune's Assistants...")
+        LOGGER(__name__).info("Starting Annie's Assistants...")
         await self.start_assistant(self.one, 1)
         await self.start_assistant(self.two, 2)
         await self.start_assistant(self.three, 3)
