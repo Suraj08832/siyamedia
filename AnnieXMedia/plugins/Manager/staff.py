@@ -18,7 +18,7 @@ def _mention_html(user) -> str:
     return f'<a href="tg://user?id={user.id}">{name}</a>'
 
 
-@app.on_message(filters.command(["3admins", "3staff"]))
+@app.on_message(filters.command(["admins", "staff"]))
 async def list_admins(client, message: Message):
     if not _in_group(message):
         return await message.reply_text(
@@ -98,7 +98,7 @@ async def list_admins(client, message: Message):
         )
 
 
-@app.on_message(filters.command("3bots"))
+@app.on_message(filters.command("bots"))
 async def list_bots(client, message: Message):
     if not _in_group(message):
         return await message.reply_text(
