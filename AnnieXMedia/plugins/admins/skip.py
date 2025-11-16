@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from AnnieXMedia import YouTube, app
-from AnnieXMedia.core.call import StreamController 
+from AnnieXMedia.core.call import StreamController
 from AnnieXMedia.misc import db
 from AnnieXMedia.utils.database import get_loop
 from AnnieXMedia.utils.decorators import AdminRightsCheck
@@ -48,7 +48,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await StreamController .stop_stream(chat_id)
+                                    await StreamController.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -64,7 +64,8 @@ async def skip(cli, message: Message, _, chat_id):
         check = db.get(chat_id)
         popped = None
         try:
-            popped = check.pop(0)
+            if check:
+                popped = check.pop(0)
             if popped:
                 await auto_clean(popped)
             if not check:
@@ -75,7 +76,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await StreamController .stop_stream(chat_id)
+                    return await StreamController.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -86,9 +87,13 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await StreamController .stop_stream(chat_id)
+                return await StreamController.stop_stream(chat_id)
             except:
                 return
+    
+    if not check:
+        return
+    
     queued = check[0]["file"]
     title = (check[0]["title"]).title()
     user = check[0]["by"]
@@ -111,7 +116,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await StreamController .skip_stream(chat_id, link, video=status, image=image)
+            await StreamController.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -144,7 +149,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await StreamController .skip_stream(chat_id, file_path, video=status, image=image)
+            await StreamController.skip_stream(chat_id, file_path, video=status, image=image)
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -164,7 +169,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await StreamController .skip_stream(chat_id, videoid, video=status)
+            await StreamController.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -186,7 +191,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await StreamController .skip_stream(chat_id, queued, video=status, image=image)
+            await StreamController.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
