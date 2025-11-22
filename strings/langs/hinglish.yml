@@ -26,6 +26,8 @@ call_7 : "Queue se next track download kar raha hu.\n\nThoda ruk ja..."
 call_8 : "<b>Koi active videochat nahi chal raha.</b>\n\nGroup/channel mein videochat start kar pehle."
 call_9 : "<b>Assistant already videochat mein hai.</b>\n\nAgar nahi dikhai de raha to /reboot maar ke phir play kar."
 call_10 : "<b>Telegram server ka chakkar hai</b>\n\nTelegram mein internal problem chal raha, thodi der baad try kar ya videochat restart kar."
+call_11: "<b>ɴᴏ ᴀᴜᴅɪᴏ sᴏᴜʀᴄᴇ ᴍɪʟᴀ</b>\nᴅᴏʙᴀʀᴀ ᴘʟᴀʏ ᴋᴀʀᴏ."
+call_12: "<b>ɴᴏ ᴠɪᴅᴇᴏ sᴏᴜʀᴄᴇ ᴍɪʟᴀ</b>\nᴅᴏʙᴀʀᴀ ᴛʀʏ ᴋᴀʀᴏ."
 
 auth_1 : "Ek group mein sirf 25 auth users hi add kar sakte hai bhai."
 auth_2 : "{0} ko auth users list mein daal diya."
