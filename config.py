@@ -1,3 +1,4 @@
+﻿# Authored By Certified Coders © 2025
 import re
 from os import getenv
 from dotenv import load_dotenv
@@ -103,7 +104,7 @@ AYUV = [
 
 # ── Runtime structures ─────────────────────────────────────────────────────────
 BANNED_USERS = filters.user()
-adminlist, lyrical, votemode, autoclean, confirmer = {}, {}, {}, [], {}
+adminlist, lyrical, autoclean, confirmer = {}, {}, [], {}
 
 # ── Minimal validation ─────────────────────────────────────────────────────────
 if SUPPORT_CHANNEL and not re.match(r"^https?://", SUPPORT_CHANNEL):
