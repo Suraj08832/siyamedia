@@ -1,4 +1,4 @@
-# Authored By Certified Coders � 2025
+# Authored By Certified Coders � 2025
 import re
 from typing import Union
 
@@ -27,16 +27,24 @@ class RessoAPI:
                     return False
                 html = await response.text()
         soup = BeautifulSoup(html, "html.parser")
+        title = None
+        des = None
         for tag in soup.find_all("meta"):
             if tag.get("property", None) == "og:title":
                 title = tag.get("content", None)
             if tag.get("property", None) == "og:description":
                 des = tag.get("content", None)
-                try:
-                    des = des.split("�")[0]
-                except:
-                    pass
-        if des == "":
+                if des:
+                    # Clean description - remove any special separator characters
+                    try:
+                        # Try to split by common separators if they exist
+                        for sep in ["·", "•", "|", "—", "–", "\n"]:
+                            if sep in des:
+                                des = des.split(sep)[0]
+                                break
+                    except Exception:
+                        pass
+        if not title or not des or des == "":
             return
         results = VideosSearch(title, limit=1)
         for result in (await results.next())["result"]:
