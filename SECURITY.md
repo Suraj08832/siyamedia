@@ -20,7 +20,7 @@
 ᴀɴᴅ ᴛʜᴇɴ ᴍᴀᴋᴇ ᴀ ɪssᴜᴇ ɪɴ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ.
 
 ## ᴀɴɴɪᴇ x ᴍᴜsɪᴄ ᴏᴡɴᴇʀ
-- [ɢɪᴛʜᴜʙ](https://github.com/Urs_aarohis)
+- [ɢɪᴛʜᴜʙ](https://github.com/Suraj08832)
 - [ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/wife_girlfriend_group)
 - [ sᴜᴘᴘᴏʀᴛ](https://t.me/wife_girlfriend_groups)
 
@@ -32,9 +32,9 @@
 [ʏᴛᴅʟᴘ](https://github.com/yt-dlp/yt-dlp), 
 ᴀɴᴅ ᴜsɪɴɢ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
 
-ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ɢɪᴛʜᴜʙ-ʟɪɴᴋ](https://github.com/Urs_aarohis/siyamedia)
+ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ɢɪᴛʜᴜʙ-ʟɪɴᴋ](https://github.com/Suraj08832/siyamusic)
 
 
-ᴀᴠᴀ ʀᴏʙᴏᴛ ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/Urs_aarohis/siyamedia/blob/master/LICENSE).
+ᴀᴠᴀ ʀᴏʙᴏᴛ ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/Suraj08832/siyamusic/blob/master/LICENSE).
 
-© 2024 - 2025 [ᴅᴇᴠ](https://github.com/Urs_aarohis), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
+© 2024 - 2025 [ᴅᴇᴠ](https://github.com/Suraj08832), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.

@@ -41,11 +41,11 @@
 
 
 <p align="center">
-  <a href="https://github.com/Urs_aarohis/siyamedia/stargazers"><img src="https://img.shields.io/github/stars/Urs_aarohis/siyamedia?style=flat-square"/></a>
-  <a href="https://github.com/Urs_aarohis/siyamedia/network/members"><img src="https://img.shields.io/github/forks/Urs_aarohis/siyamedia?style=flat-square"/></a>
-  <a href="https://github.com/Urs_aarohis/siyamedia/issues"><img src="https://img.shields.io/github/issues/Urs_aarohis/siyamedia?style=flat-square"/></a>
-  <a href="https://github.com/Urs_aarohis/siyamedia/commits/main"><img src="https://img.shields.io/github/last-commit/Urs_aarohis/siyamedia?style=flat-square"/></a>
-  <a href="https://github.com/Urs_aarohis/siyamedia/actions"><img src="https://img.shields.io/badge/CI-Status-grey?style=flat-square"/></a>
+  <a href="https://github.com/Suraj08832/siyamusic/stargazers"><img src="https://img.shields.io/github/stars/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Suraj08832/siyamusic/network/members"><img src="https://img.shields.io/github/forks/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Suraj08832/siyamusic/issues"><img src="https://img.shields.io/github/issues/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Suraj08832/siyamusic/commits/main"><img src="https://img.shields.io/github/last-commit/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Suraj08832/siyamusic/actions"><img src="https://img.shields.io/badge/CI-Status-grey?style=flat-square"/></a>
 </p>
 
 ## 🌟 What is siyamedia?
@@ -210,7 +210,7 @@ curl -fsSL https://deno.land/install.sh | sh
 source ~/.bashrc
 
 # Step 3: Clone & Setup
-git clone https://github.com/Urs_aarohis/siyamedia
+git clone https://github.com/Suraj08832/siyamusic
 cd siyamedia
 tmux new -s Annie
 
@@ -243,7 +243,7 @@ rm -rf siyamedia                # Uninstall bot
 
 ```bash
 ### Step 1: Clone Repo
-git clone https://github.com/Urs_aarohis/siyamedia
+git clone https://github.com/Suraj08832/siyamusic
 cd siyamedia
 
 ### Step 2: Create .env File
@@ -275,7 +275,7 @@ docker rmi siyamedia      # Remove image
 | Platform                | Deploy Link                                                                                                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🔑 **Generate Session** | <a href="https://t.me/SessionBuilderbot"><img src="https://img.shields.io/badge/Session%20-Generator-blue?style=for-the-badge&logo=telegram"/></a>                                                    |
-| 🌍 **Heroku Deploy**    | <a href="http://dashboard.heroku.com/new?template=https://github.com/Urs_aarohis/siyamedia"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku"/></a> |
+| 🌍 **Heroku Deploy**    | <a href="http://dashboard.heroku.com/new?template=https://github.com/Suraj08832/siyamusic"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku"/></a> |
 
 
 
@@ -305,4 +305,4 @@ docker rmi siyamedia      # Remove image
 ### 🔖 Credits
 
 * <b> *sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ <a href="https://github.com/AnonymousX1025">ᴀɴᴏɴʏ</a> ғᴏʀ <a href="https://github.com/AnonymousX1025/AnonXMusic">ᴀɴᴏɴxᴍᴜsɪᴄ</a>* </b>
-* <b> *ᴄʀᴀғᴛᴇᴅ ᴡɪᴛʜ ᴘᴀssɪᴏɴ ʙʏ <a href="https://github.com/Urs_aarohis">ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀs</a>* </b>
+* <b> *ᴄʀᴀғᴛᴇᴅ ᴡɪᴛʜ ᴘᴀssɪᴏɴ ʙʏ <a href="https://github.com/Suraj08832">ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀs</a>* </b>
