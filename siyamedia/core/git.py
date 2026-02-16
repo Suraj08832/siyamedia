@@ -1,4 +1,4 @@
-# Authored By Certified Coders © 2025
+# Authored By Certified Coders ï¿½ 2025
 import asyncio
 import shlex
 from typing import Tuple
@@ -32,41 +32,68 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 def git():
     REPO_LINK = config.UPSTREAM_REPO
+    if not REPO_LINK:
+        LOGGER(__name__).info("No UPSTREAM_REPO configured, skipping git operations")
+        return
+    
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
         UPSTREAM_REPO = f"https://{GIT_USERNAME}:{config.GIT_TOKEN}@{TEMP_REPO}"
     else:
         UPSTREAM_REPO = config.UPSTREAM_REPO
+    
     try:
         repo = Repo()
         LOGGER(__name__).info(f"Git Client Found [VPS DEPLOYER]")
     except GitCommandError:
         LOGGER(__name__).info(f"Invalid Git Command")
     except InvalidGitRepositoryError:
-        repo = Repo.init()
-        if "origin" in repo.remotes:
-            origin = repo.remote("origin")
-        else:
-            origin = repo.create_remote("origin", UPSTREAM_REPO)
-        origin.fetch()
-        repo.create_head(
-            config.UPSTREAM_BRANCH,
-            origin.refs[config.UPSTREAM_BRANCH],
-        )
-        repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
-            origin.refs[config.UPSTREAM_BRANCH]
-        )
-        repo.heads[config.UPSTREAM_BRANCH].checkout(True)
         try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
-        except BaseException:
-            pass
-        nrs = repo.remote("origin")
-        nrs.fetch(config.UPSTREAM_BRANCH)
-        try:
-            nrs.pull(config.UPSTREAM_BRANCH)
-        except GitCommandError:
-            repo.git.reset("--hard", "FETCH_HEAD")
-        install_req("pip3 install --no-cache-dir -r requirements.txt")
-        LOGGER(__name__).info(f"Fetching updates from upstream repository...")
+            repo = Repo.init()
+            if "origin" in repo.remotes:
+                origin = repo.remote("origin")
+            else:
+                origin = repo.create_remote("origin", UPSTREAM_REPO)
+            
+            try:
+                origin.fetch()
+            except Exception as e:
+                LOGGER(__name__).warning(f"Failed to fetch from origin: {e}")
+                return
+            
+            # Check if the remote branch exists before accessing it
+            remote_branch_name = f"origin/{config.UPSTREAM_BRANCH}"
+            available_refs = [str(ref) for ref in origin.refs]
+            
+            if remote_branch_name not in available_refs:
+                LOGGER(__name__).warning(f"Remote branch {config.UPSTREAM_BRANCH} not found. Available refs: {available_refs[:5]}")
+                return
+            
+            try:
+                remote_ref = origin.refs[config.UPSTREAM_BRANCH]
+            except (IndexError, AttributeError) as e:
+                LOGGER(__name__).warning(f"Could not access remote branch {config.UPSTREAM_BRANCH}: {e}")
+                return
+            
+            repo.create_head(
+                config.UPSTREAM_BRANCH,
+                remote_ref,
+            )
+            repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(remote_ref)
+            repo.heads[config.UPSTREAM_BRANCH].checkout(True)
+            try:
+                repo.create_remote("origin", config.UPSTREAM_REPO)
+            except BaseException:
+                pass
+            nrs = repo.remote("origin")
+            nrs.fetch(config.UPSTREAM_BRANCH)
+            try:
+                nrs.pull(config.UPSTREAM_BRANCH)
+            except GitCommandError:
+                repo.git.reset("--hard", "FETCH_HEAD")
+            install_req("pip3 install --no-cache-dir -r requirements.txt")
+            LOGGER(__name__).info(f"Fetching updates from upstream repository...")
+        except Exception as e:
+            LOGGER(__name__).warning(f"Git operations failed (this is normal on Heroku/Docker): {e}")
+            return
