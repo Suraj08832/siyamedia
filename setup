@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# ================ AnnieXMusic=======================
+# ================ siyamedia=======================
 # Only collects env and writes .env with summary UI
 # ===================================================
 

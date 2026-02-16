@@ -90,7 +90,7 @@ admin_43 : "Karıştırma başarısız oldu.\n\nKuyruğu kontrol et: /queue"
 admin_44 : "**Kuyruk {0} tarafından karıştırıldı**\n\nKarışık kuyruğu kontrol et: /queue"
 
 start_1 : "{0} hayatta bebeğim.\n\n<b>✫ Çalışma Süresi :</b> {1}"
-start_2 : "Merhaba, {0} \nBen {1},\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ Özel özelliklere sahibim.\n┠ ◆ Hepsi bir arada bot.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ Sesli sohbette şarkı çalabilirsin.\n┠ ◆ Görseller oluşturabilirsin.\n┠ ◆ Çok dilli çeviri yapabilirsin.\n┠ ◆ Sessize alma, ses açma, yasaklama, yasağı kaldırma, atma..\n┠ ◆ Özel karşılama \n┠ ◆ Daha fazla özellik için komutlar düğmesine tıkla...\n┗━━━━━━━━━━━━━━━━━⧫\n๏ Modüllerim ve komutlarım hakkında bilgi almak için yardım düğmesine tıklayın.\n\n🫧 Geliştirici 🪽 ➪ [Sertifikalı Kodlayıcı ✔︎](https://t.me/CertifiedCoder)"
+start_2 : "Merhaba, {0} \nBen {1},\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ Özel özelliklere sahibim.\n┠ ◆ Hepsi bir arada bot.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ Sesli sohbette şarkı çalabilirsin.\n┠ ◆ Görseller oluşturabilirsin.\n┠ ◆ Çok dilli çeviri yapabilirsin.\n┠ ◆ Sessize alma, ses açma, yasaklama, yasağı kaldırma, atma..\n┠ ◆ Özel karşılama \n┠ ◆ Daha fazla özellik için komutlar düğmesine tıkla...\n┗━━━━━━━━━━━━━━━━━⧫\n๏ Modüllerim ve komutlarım hakkında bilgi almak için yardım düğmesine tıklayın.\n\n🫧 Geliştirici 🪽 ➪ [Sertifikalı Kodlayıcı ✔︎](https://t.me/wife_girlfriend_group)"
 start_3 : "Selam {0},\nBen {1}\n\n{2} grubuna eklediğin için teşekkürler, {3} artık bu sohbette şarkılar çalabilir."
 start_4 : "🎄 <b>Süper grup gerekiyor</b> 🎄\n\nLütfen <b>grubunuzu</b> <b>süper gruba</b> çevirin ve ardından beni tekrar ekleyin.\n\n<b>Süper grup nasıl yapılır?</b>\n- Grubunuzun sohbet geçmişini bir kez <b>görünür</b> yapın."
 start_5 : "<b>↝ Kara Listeye Alınmış Sohbet ↜</b>\n\nBu sohbet, {0} veritabanında kara listeye alınmış.\n<a href={1}>Sudo kullanıcısına</a> kara listeden çıkarılması için başvurun veya <a href={2}>destek sohbetine</a> gidin."
@@ -168,7 +168,7 @@ str_2 : "➻ Geçerli yayın doğrulandı.\n\nİşleniyor..."
 str_3 : "YouTube canlı yayını akışı başarısız oldu, canlı format bulunamadı."
 
 ping_1 : "{0} ping atıyor..."
-ping_2 : "{1}\n\n🏓 Ping : {0}ms..\n\n➻ Sistem Durumu :\n\n↬ Çalışma Süresi : {2}\n↬ RAM : {3}\n↬ CPU : {4}\n↬ Disk : {5}\n↬ Py-TgCalls : {6}ms\n\n🥀 tarafından » CertifiedCoder ♡︎"
+ping_2 : "{1}\n\n🏓 Ping : {0}ms..\n\n➻ Sistem Durumu :\n\n↬ Çalışma Süresi : {2}\n↬ RAM : {3}\n↬ CPU : {4}\n↬ Disk : {5}\n↬ Py-TgCalls : {6}ms\n\n🥀 tarafından » Urs_aarohi ♡︎"
 
 queue_1 : "» Kuyruk getiriliyor...\n\nLütfen bekleyin..."
 queue_2 : "» Kuyruk boş."

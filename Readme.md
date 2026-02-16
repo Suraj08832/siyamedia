@@ -22,7 +22,7 @@
 <!-- 👁 Visitor Counter -->
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=CertifiedCoders&style=flat-square" />
+  <img src="https://komarev.com/ghpvc/?username=Urs_aarohis&style=flat-square" />
 </p>
 
 <h1 align="center">
@@ -30,7 +30,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://t.me/CertifiedCoders">
+  <a href="https://t.me/wife_girlfriend_groups">
     <img src="https://files.catbox.moe/eh780q.jpg" width="600">
   </a>
 </p>
@@ -41,16 +41,16 @@
 
 
 <p align="center">
-  <a href="https://github.com/CertifiedCoders/AnnieXMusic/stargazers"><img src="https://img.shields.io/github/stars/CertifiedCoders/AnnieXMusic?style=flat-square"/></a>
-  <a href="https://github.com/CertifiedCoders/AnnieXMusic/network/members"><img src="https://img.shields.io/github/forks/CertifiedCoders/AnnieXMusic?style=flat-square"/></a>
-  <a href="https://github.com/CertifiedCoders/AnnieXMusic/issues"><img src="https://img.shields.io/github/issues/CertifiedCoders/AnnieXMusic?style=flat-square"/></a>
-  <a href="https://github.com/CertifiedCoders/AnnieXMusic/commits/main"><img src="https://img.shields.io/github/last-commit/CertifiedCoders/AnnieXMusic?style=flat-square"/></a>
-  <a href="https://github.com/CertifiedCoders/AnnieXMusic/actions"><img src="https://img.shields.io/badge/CI-Status-grey?style=flat-square"/></a>
+  <a href="https://github.com/Urs_aarohis/siyamedia/stargazers"><img src="https://img.shields.io/github/stars/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Urs_aarohis/siyamedia/network/members"><img src="https://img.shields.io/github/forks/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Urs_aarohis/siyamedia/issues"><img src="https://img.shields.io/github/issues/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Urs_aarohis/siyamedia/commits/main"><img src="https://img.shields.io/github/last-commit/Urs_aarohis/siyamedia?style=flat-square"/></a>
+  <a href="https://github.com/Urs_aarohis/siyamedia/actions"><img src="https://img.shields.io/badge/CI-Status-grey?style=flat-square"/></a>
 </p>
 
-## 🌟 What is AnnieXMusic?
+## 🌟 What is siyamedia?
 
-**AnnieXMusic** is a modern Telegram bot that streams **high-quality music** into group voice chats.
+**siyamedia** is a modern Telegram bot that streams **high-quality music** into group voice chats.
 Powered by **Pyrogram + PyTgCalls**, it supports multiple platforms like **YouTube, Spotify, Apple Music, SoundCloud, Resso, and more**.
 It also includes **basic group management features** for convenience.
 
@@ -198,7 +198,7 @@ API_URL=             # Optional - External API url for audio Download
   <details>
 
 ```bash
-🎵 Deploy AnnieXMusic on VPS
+🎵 Deploy siyamedia on VPS
 
 # Step 1: Update & Install Dependencies
 sudo apt update && sudo apt upgrade -y
@@ -210,8 +210,8 @@ curl -fsSL https://deno.land/install.sh | sh
 source ~/.bashrc
 
 # Step 3: Clone & Setup
-git clone https://github.com/CertifiedCoders/AnnieXMusic
-cd AnnieXMusic
+git clone https://github.com/Urs_aarohis/siyamedia
+cd siyamedia
 tmux new -s Annie
 
 # Inside tmux:
@@ -226,7 +226,7 @@ bash start  # Run bot
 tmux detach                      # Use Ctrl+B, then D
 tmux attach-session -t Annie       # Reattach session
 tmux kill-session -t Annie         # Kill bot session
-rm -rf AnnieXMusic                # Uninstall bot
+rm -rf siyamedia                # Uninstall bot
 ```
 
   </details>
@@ -243,25 +243,25 @@ rm -rf AnnieXMusic                # Uninstall bot
 
 ```bash
 ### Step 1: Clone Repo
-git clone https://github.com/CertifiedCoders/AnnieXMusic
-cd AnnieXMusic
+git clone https://github.com/Urs_aarohis/siyamedia
+cd siyamedia
 
 ### Step 2: Create .env File
 nano .env
 # Paste your environment variables here and save (Ctrl+O, Enter, Ctrl+X)
 
 ### Step 3: Build Image
-docker build -t anniexmusic .
+docker build -t siyamedia .
 
 ### Step 4: Run Container
-docker run -d --name annie --env-file .env --restart unless-stopped anniexmusic
+docker run -d --name annie --env-file .env --restart unless-stopped siyamedia
 
 ### Step 5: Manage Container
 docker logs -f annie        # View logs (Ctrl+C to exit)
 docker stop annie           # Stop container
 docker start annie          # Start again
 docker rm -f annie          # Remove container
-docker rmi anniexmusic      # Remove image
+docker rmi siyamedia      # Remove image
 ```
 
   </details>
@@ -275,7 +275,7 @@ docker rmi anniexmusic      # Remove image
 | Platform                | Deploy Link                                                                                                                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🔑 **Generate Session** | <a href="https://t.me/SessionBuilderbot"><img src="https://img.shields.io/badge/Session%20-Generator-blue?style=for-the-badge&logo=telegram"/></a>                                                    |
-| 🌍 **Heroku Deploy**    | <a href="http://dashboard.heroku.com/new?template=https://github.com/CertifiedCoders/AnnieXMusic"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku"/></a> |
+| 🌍 **Heroku Deploy**    | <a href="http://dashboard.heroku.com/new?template=https://github.com/Urs_aarohis/siyamedia"><img src="https://img.shields.io/badge/Deploy%20to-Heroku-purple?style=for-the-badge&logo=heroku"/></a> |
 
 
 
@@ -283,13 +283,13 @@ docker rmi anniexmusic      # Remove image
 ## 💬 Community & Support
 
 <p align="center">
-  <a href="https://t.me/CertifiedCoders">
+  <a href="https://t.me/wife_girlfriend_groups">
     <img src="https://img.shields.io/badge/Support_Group-Telegram-0088cc?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   <a href="https://t.me/CertifiedCodes">
     <img src="https://img.shields.io/badge/Updates_Channel-Telegram-6A5ACD?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
-  <a href="https://t.me/CertifiedCoder">
+  <a href="https://t.me/wife_girlfriend_group">
     <img src="https://img.shields.io/badge/Contact_Owner-Telegram-4CAF50?style=for-the-badge&logo=telegram&logoColor=white" />
   </a>
   <a href="https://instagram.com/rajnishthegreat">
@@ -305,4 +305,4 @@ docker rmi anniexmusic      # Remove image
 ### 🔖 Credits
 
 * <b> *sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ <a href="https://github.com/AnonymousX1025">ᴀɴᴏɴʏ</a> ғᴏʀ <a href="https://github.com/AnonymousX1025/AnonXMusic">ᴀɴᴏɴxᴍᴜsɪᴄ</a>* </b>
-* <b> *ᴄʀᴀғᴛᴇᴅ ᴡɪᴛʜ ᴘᴀssɪᴏɴ ʙʏ <a href="https://github.com/CertifiedCoders">ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀs</a>* </b>
+* <b> *ᴄʀᴀғᴛᴇᴅ ᴡɪᴛʜ ᴘᴀssɪᴏɴ ʙʏ <a href="https://github.com/Urs_aarohis">ᴄᴇʀᴛɪғɪᴇᴅ ᴄᴏᴅᴇʀs</a>* </b>
